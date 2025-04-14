@@ -23,3 +23,7 @@ The Weather App is a React-based application that provides real-time weather inf
 2. Install dependencies using `npm install`.
 3. Create a `.env` file with your API keys for OpenWeatherMap and Google Maps.
 4. Run the app using `npm start`.
+
+## Screenshots
+
+![Weather App Interface](public/WeatherApp.png)
