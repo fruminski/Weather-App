@@ -3,7 +3,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   gap: 1rem;
 }
@@ -12,15 +12,16 @@
 .background {
   position: fixed;
   z-index: -1;
+
 }
 
 .background img {
-
   object-fit: cover;
   object-position: center;
   top: 0;
   object-position: top;
   animation: 50s linear infinite background-move;
+
 }
 
 @keyframes background-move {
@@ -38,12 +39,29 @@
 }
 
 input {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   font-size: 15px;
   width: 350px;
   padding: 10px;
   border: 3px solid rgba(206, 196, 196, 0.529);
   border-radius: 5px;
+}
+
+.input-container {
+  margin-bottom: 0;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 80%;
+  font-size: 20px;
+  margin-top: 100px;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.966);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
 }
 
 button {
@@ -53,7 +71,6 @@ button {
   border-radius: 5px;
   color: white;
   background-color: #4fa14f;
-  /* border: 3px solid rgba(49, 155, 90, 0.529); */
   cursor: pointer;
 }
 
@@ -79,6 +96,8 @@ button:hover {
     justify-content: center;
     width: 70%;
     margin: 20px auto;
+    padding: 10px;
+    font-size: 15px;
   }
 
 }
@@ -87,7 +106,7 @@ button:hover {
   input {
     margin-bottom: 0;
     margin-top: 0px;
-
+    font-size: 13px;
   }
 
   .App {
@@ -100,6 +119,9 @@ button:hover {
     align-items: center;
     justify-content: center;
     width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 15px;
 
   }
 
