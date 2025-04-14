@@ -15,9 +15,11 @@
 }
 
 .background img {
-  width: 100vw;
-  height: 100vh;
+
   object-fit: cover;
+  object-position: center;
+  top: 0;
+  object-position: top;
   animation: 50s linear infinite background-move;
 }
 
@@ -84,6 +86,7 @@ button:hover {
 @media screen and (max-width: 992px) {
   input {
     margin-bottom: 0;
+    margin-top: 0px;
 
   }
 
@@ -97,7 +100,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     width: 70%;
-    margin: 20px auto;
+
   }
 
 }
