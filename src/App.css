@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 
@@ -86,7 +86,7 @@ button:hover {
   }
 
   .App {
-    justify-content: space-around;
+    /* justify-content: space-around; */
     overflow: hidden;
   }
 
@@ -110,7 +110,7 @@ button:hover {
   }
 
   .App {
-    justify-content: space-around;
+    /* justify-content: space-around; */
     overflow: hidden;
   }
 
@@ -125,4 +125,51 @@ button:hover {
 
   }
 
+}
+
+@media screen and (max-width: 450px) {
+
+  .input-container {
+    width: 70%;
+    padding: 10px;
+    font-size: 10px;
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+  .App {
+    justify-content: space-around;
+    overflow: hidden;
+  }
+
+  input {
+    margin-bottom: 0;
+    margin-top: 0px;
+    font-size: 10px;
+    width: 250px;
+  }
+}
+
+@media screen and (min-height: 1179px) {
+  .App {
+    height: 100vh;
+
+  }
+
+  .input-container {
+    margin: 30px auto;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.966);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
 }

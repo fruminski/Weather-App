@@ -453,3 +453,45 @@
     }
 
 }
+
+@media screen and (min-height: 1180px) {
+    .weather-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10px;
+        width: 90%;
+        height: 100%;
+    }
+
+    .left-container {
+        width: 70%;
+        height: 40%;
+        gap: 0px;
+    }
+
+    .right-container {
+        width: 70%;
+        height: 40%;
+        gap: 0px;
+    }
+
+    .bottom-container {
+        font-size: 12px;
+        margin: 0;
+
+    }
+
+    .bottom-container p {
+        font-size: 10px;
+    }
+
+    .bottom-container .value {
+        font-size: 10px;
+    }
+
+    .bottom-container img {
+        width: 40px;
+        height: 40px;
+        margin: 0;
+    }
+}
