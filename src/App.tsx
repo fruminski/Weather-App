@@ -89,8 +89,6 @@ function App() {
 
 
     async function getWeather() {
-      //const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input}&appid=47625d659a70afdd212d81b1d245bb54`)
-      //const responseGeo = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${input}&limit=5&appid=47625d659a70afdd212d81b1d245bb54`)
       const responseGeo = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${input}&key=${process.env.REACT_APP_GOOGLEMAPS_API_KEY}`)
 
       const dataGeo = await responseGeo.json();
@@ -141,7 +139,7 @@ function App() {
 
   useEffect(() => {
     async function getWeather() {
-      //const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=47625d659a70afdd212d81b1d245bb54`)
+
       const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&cnt=40&appid=${process.env.REACT_APP_OPENWEATHER_API_KEY}&units=metric`)
 
       const data = await response.json();
